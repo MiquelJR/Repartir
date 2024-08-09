@@ -7,6 +7,19 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fondo grisáceo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff; /* Fondo blanco para el contenido */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         #resultado {
             margin-top: 20px;
@@ -15,17 +28,19 @@
     </style>
 </head>
 <body>
-    <h1>Distribuir Sardana en Estilo Empordanés</h1>
+    <div class="container">
+        <h1>Distribuir Sardana en Estilo Empordanés</h1>
 
-    <label for="numero1">Número de Curts:</label>
-    <input type="number" id="numero1" min="0" value="4">
-    <br>
-    <label for="numero2">Número de Llargs:</label>
-    <input type="number" id="numero2" min="0" value="2">
-    <br>
-    <button onclick="calcular()">Calcular</button>
+        <label for="numero1">Número de Curts:</label>
+        <input type="number" id="numero1" min="0" value="4">
+        <br>
+        <label for="numero2">Número de Llargs:</label>
+        <input type="number" id="numero2" min="0" value="2">
+        <br>
+        <button onclick="calcular()">Calcular</button>
 
-    <div id="resultado"></div>
+        <div id="resultado"></div>
+    </div>
 
     <!-- Incluye el archivo de JavaScript externo -->
     <script src="repartir.js"></script>
