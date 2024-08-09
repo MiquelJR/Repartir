@@ -21,14 +21,14 @@ function calcular_quatre() {
     printar = "";
 
     // Repartir la sardana si los curts y los llargs son impares
-    primera_segona(curts);
-    tercera_quarta(llargs);
+    primera_segona_de_quatre(curts);
+    tercera_quarta_de_quatre(llargs);
 
     // Mostrar el resultado en la página
     document.getElementById('resultado1').innerText = printar;
 }
 
-function primera_segona(curts) {
+function primera_segona_de_quatre(curts) {
     console.log('Función primera_segona iniciada');
 
     var moment = curts - 3;
@@ -41,7 +41,7 @@ function primera_segona(curts) {
     }
 }
 
-function tercera_quarta(llargs) {
+function tercera_quarta_de_quatre(llargs) {
     console.log('Función tercera_quarta iniciada');
 
     var moment;

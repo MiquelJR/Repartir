@@ -21,15 +21,15 @@ function calcular_cinc() {
     printar = "";
 
     // Repartir la sardana si los curts y los llargs son impares
-    primera_segona(curts);
-    tercera_quarta(llargs);
+    primera_segona_de_cinc(curts);
+    tercera_quarta_de_cinc(llargs);
     cinquena_de_cinc(curts);
 
     // Mostrar el resultado en la página
     document.getElementById('resultado2').innerText = printar;
 }
 
-function primera_segona(curts) {
+function primera_segona_de_cinc(curts) {
     console.log('Función primera_segona iniciada');
 
     var moment = curts - 3;
@@ -42,7 +42,7 @@ function primera_segona(curts) {
     }
 }
 
-function tercera_quarta(llargs) {
+function tercera_quarta_de_cinc(llargs) {
     console.log('Función tercera_quarta iniciada');
 
     var moment;
