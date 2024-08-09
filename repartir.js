@@ -5,15 +5,15 @@ function calcular() {
     console.log('Función calcular iniciada');
 
     // Obtener los valores de los inputs
-    var curts = parseFloat(document.getElementById('numero1').value);
-    var llargs = parseFloat(document.getElementById('numero2').value);
+    var curts = parseFloat(document.getElementById('numero5').value);
+    var llargs = parseFloat(document.getElementById('numero6').value);
 
     console.log('Número de Curts:', curts);
     console.log('Número de Llargs:', llargs);
 
     // Verificar que los valores no estén vacíos
     if (isNaN(curts) || isNaN(llargs)) {
-        document.getElementById('resultado').innerText = 'Por favor, ingrese ambos números.';
+        document.getElementById('resultado3').innerText = 'Por favor, ingrese ambos números.';
         return;
     }
 
@@ -28,8 +28,9 @@ function calcular() {
     setena(llargs);
 
     // Mostrar el resultado en la página
-    document.getElementById('resultado').innerText = printar;
+    document.getElementById('resultado3').innerText = printar;
 }
+
 
 function primera_segona(curts) {
     console.log('Función primera_segona iniciada');

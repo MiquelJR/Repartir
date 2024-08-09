@@ -2,18 +2,18 @@ let printar = "";
 let dreta;
 
 function calcular_cinc() {
-    console.log('Función calcular iniciada');
+    console.log('Función calcular_cinc iniciada');
 
     // Obtener los valores de los inputs
-    var curts = parseFloat(document.getElementById('numero1').value);
-    var llargs = parseFloat(document.getElementById('numero2').value);
+    var curts = parseFloat(document.getElementById('numero3').value);
+    var llargs = parseFloat(document.getElementById('numero4').value);
 
     console.log('Número de Curts:', curts);
     console.log('Número de Llargs:', llargs);
 
     // Verificar que los valores no estén vacíos
     if (isNaN(curts) || isNaN(llargs)) {
-        document.getElementById('resultado').innerText = 'Por favor, ingrese ambos números.';
+        document.getElementById('resultado2').innerText = 'Por favor, ingrese ambos números.';
         return;
     }
 
@@ -26,8 +26,9 @@ function calcular_cinc() {
     cinquena_de_cinc(curts);
 
     // Mostrar el resultado en la página
-    document.getElementById('resultado').innerText = printar;
+    document.getElementById('resultado2').innerText = printar;
 }
+
 function cinquena_de_cinc(llargs) {
     console.log('Función setena iniciada');
 

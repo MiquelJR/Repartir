@@ -2,7 +2,7 @@ let printar = "";
 let dreta;
 
 function calcular_quatre() {
-    console.log('Función calcular iniciada');
+    console.log('Función calcular_quatre iniciada');
 
     // Obtener los valores de los inputs
     var curts = parseFloat(document.getElementById('numero1').value);
@@ -13,7 +13,7 @@ function calcular_quatre() {
 
     // Verificar que los valores no estén vacíos
     if (isNaN(curts) || isNaN(llargs)) {
-        document.getElementById('resultado').innerText = 'Por favor, ingrese ambos números.';
+        document.getElementById('resultado1').innerText = 'Por favor, ingrese ambos números.';
         return;
     }
 
@@ -25,5 +25,5 @@ function calcular_quatre() {
     tercera_quarta(llargs);
 
     // Mostrar el resultado en la página
-    document.getElementById('resultado').innerText = printar;
+    document.getElementById('resultado1').innerText = printar;
 }
