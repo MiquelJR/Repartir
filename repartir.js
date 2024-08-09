@@ -125,11 +125,12 @@ function sisena(llargs) {
 
     var moment;
     var moment_actual;
+    var llargs_copy = llargs;
 
     moment = llargs - 10;
 
     if(dreta === false){
-        if(llargs % 2 === 0){
+        if(llargs_copy % 2 === 0){
             if(moment % 8 === 0){
                 moment_actual = llargs - 5;
                 printar += "\n Sisena tirada: Comptar " + moment_actual + " i dir Dos DOSSOS i Un DOS (esquerra) .";
@@ -159,7 +160,7 @@ function sisena(llargs) {
             }
         }
     }else{
-        if(llargs % 2 === 0){
+        if(llargs_copy % 2 === 0){
             if(moment % 8 === 0){
                 moment_actual = llargs - 3;
                 printar += "\n Sisena tirada: Comptar " + moment_actual + " i dir Un DOS (esquerra) .";
@@ -194,11 +195,10 @@ function sisena(llargs) {
 function setena(llargs) {
     console.log('Función setena iniciada');
 
-    var moment;
+    var  moment = llargs - 10;
     var moment_actual;
 
     if (llargs % 2 === 0) {
-        moment = llargs - 10;
 
         if ((moment) % 8 === 0) {
             moment_actual = llargs - 3;
@@ -215,15 +215,14 @@ function setena(llargs) {
         }
 
     } else {
-        moment = llargs - 10;
         // Continuar con el cálculo para el caso en que llargs es impar
-        if ((moment) % 8 === 1) {
+        if (moment % 8 === 1) {
             moment_actual = llargs - 4;
             printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Un TRES (esquerra) .";
-        } else if ((moment) % 8 === 3) {
+        } else if (moment % 8 === 3) {
             moment_actual = llargs - 10;
             printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Tres DOSSOS i Un TRES (esquerra) .";
-        } else if ((moment) % 8 === 5) {
+        } else if (moment % 8 === 5) {
             moment_actual = llargs - 3;
             printar += "\n Setena tirada: Comptar " + moment_actual + " i dir dos DOSSOS i un TRES (esquerra) .";
         } else {
