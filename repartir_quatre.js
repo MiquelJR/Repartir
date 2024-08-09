@@ -29,25 +29,25 @@ function calcular_quatre() {
 }
 
 function primera_segona_de_quatre(curts) {
-    console.log('Función primera_segona iniciada');
+    console.log('Función primera_segona_de_quatre iniciada');
 
     var moment = curts - 3;
     if ((moment + curts + 1) % 4 === 0) {
         dreta = false;
-        printar += "\n Primera tirada: Comptar " + curts + " .\n Segona tirada: Comptar " + moment + " i dir Un DOS (esquerra) .";
+        printar += "Primera tirada: Comptar " + curts + " .\nSegona tirada: Comptar " + moment + " i dir Un DOS (esquerra) .";
     } else {
         dreta = true;
-        printar += "\n Primera tirada: Comptar " + curts + " .\n Segona tirada: Comptar " + moment + " i dir Un DOS (dreta) .";
+        printar += "Primera tirada: Comptar " + curts + " .\nSegona tirada: Comptar " + moment + " i dir Un DOS (dreta) .";
     }
 }
 
 function tercera_quarta_de_quatre(llargs) {
-    console.log('Función tercera_quarta iniciada');
+    console.log('Función tercera_quarta_de_quatre iniciada');
 
     var moment;
     var moment_actual;
 
-    printar += "\n Tercera tirada: Comptar " + llargs + " .";
+    printar += "\nTercera tirada: Comptar " + llargs + " .";
 
     if (llargs % 2 === 0) {
         moment = llargs - 5;
@@ -56,13 +56,12 @@ function tercera_quarta_de_quatre(llargs) {
             moment_actual += 4;
         }
         if ((moment_actual + llargs + 1) % 8 === 0) {
-            printar += "\n Quarta tirada: Comptar " + moment + " i dir Un QUATRE (esquerra) .";
+            printar += "\nQuarta tirada: Comptar " + moment + " i dir Un QUATRE (esquerra) .";
             dreta = false;
         } else {
-            printar += "\n Quarta tirada: Comptar " + moment + " i dir Un QUATRE (dreta) .";
+            printar += "\nQuarta tirada: Comptar " + moment + " i dir Un QUATRE (dreta) .";
             dreta = true;
         }
-
     } else {
         moment = llargs - 3;
         moment_actual = moment;
@@ -70,10 +69,10 @@ function tercera_quarta_de_quatre(llargs) {
             moment_actual += 4;
         }
         if ((moment_actual + llargs + 1) % 8 === 0) {
-            printar += "\n Quarta tirada: Comptar " + moment + " i dir Un DOS (esquerra) .";
+            printar += "\nQuarta tirada: Comptar " + moment + " i dir Un DOS (esquerra) .";
             dreta = false;
         } else {
-            printar += "\n Quarta tirada: Comptar " + moment + " i dir Un DOS (dreta) .";
+            printar += "\nQuarta tirada: Comptar " + moment + " i dir Un DOS (dreta) .";
             dreta = true;
         }
     }
