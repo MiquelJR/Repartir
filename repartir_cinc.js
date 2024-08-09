@@ -91,32 +91,32 @@ function cinquena_de_cinc(llargs) {
 
         if ((moment) % 8 === 0) {
             moment_actual = llargs - 3;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Un DOS (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Un DOS (esquerra) .";
         } else if ((moment) % 8 === 2) {
             moment_actual = llargs - 5;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Un QUATRE (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Un QUATRE (esquerra) .";
         } else if ((moment) % 8 === 4) {
             moment_actual = llargs - 5;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Dos DOSSOS i Un DOS (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Dos DOSSOS i Un DOS (esquerra) .";
         } else {
             moment_actual = llargs - 4;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Un DOSSOS i Un DOS (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Un DOSSOS i Un DOS (esquerra) .";
         }
 
     } else {
         // Continuar con el cálculo para el caso en que llargs es impar
         if (moment % 8 === 1) {
             moment_actual = llargs - 4;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Un TRES (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Un TRES (esquerra) .";
         } else if (moment % 8 === 3) {
             moment_actual = llargs - 10;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir Tres DOSSOS i Un TRES (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir Tres DOSSOS i Un TRES (esquerra) .";
         } else if (moment % 8 === 5) {
             moment_actual = llargs - 3;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir dos DOSSOS i un TRES (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir dos DOSSOS i un TRES (esquerra) .";
         } else {
             moment_actual = llargs - 4;
-            printar += "\n Setena tirada: Comptar " + moment_actual + " i dir un DOSSOS i un TRES (esquerra) .";
+            printar += "\n Cinquena tirada: Comptar " + moment_actual + " i dir un DOSSOS i un TRES (esquerra) .";
         }
     }
 }
