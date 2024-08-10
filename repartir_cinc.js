@@ -26,7 +26,7 @@ function calcular_cinc() {
     cinquena_de_cinc(llargs);
 
     // Mostrar el resultado en la página
-    document.getElementById('resultado2').innerText = printar;
+    document.getElementById('resultado3').innerText = printar;
 }
 
 function primera_segona_de_cinc(curts) {

@@ -25,7 +25,7 @@ function calcular_quatre() {
     tercera_quarta_de_quatre(llargs);
 
     // Mostrar el resultado en la página
-    document.getElementById('resultado1').innerText = printar;
+    document.getElementById('resultado3').innerText = printar;
 }
 
 function primera_segona_de_quatre(curts) {
