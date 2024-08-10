@@ -56,9 +56,7 @@ function tercera_quarta_de_quatre(llargs) {
             moment_actual += 4;
         }
         if ((moment_actual + llargs + 1) % 8 === 0) {
-        if (dreta_quatre === false) {
             printar_quatre += "\nQuarta tirada: Comptar " + moment + " i dir Un QUATRE (esquerra) .";
-        if (dreta_quatre === false) {
             dreta_quatre = false;
         } else {
             printar_quatre += "\nQuarta tirada: Comptar " + moment + " i dir Un QUATRE (dreta) .";
