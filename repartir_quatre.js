@@ -13,7 +13,7 @@ function calcular_quatre() {
 
     // Verificar que los valores no estén vacíos
     if (isNaN(curts) || isNaN(llargs)) {
-        document.getElementById('resultado1').innerText = 'Por favor, ingrese ambos números.';
+        document.getElementById('resultado1').innerText = 'Si us plau, ingressa els dos tiratges.';
         return;
     }
 

@@ -13,7 +13,7 @@ function calcular() {
 
     // Verificar que los valores no estén vacíos
     if (isNaN(curts) || isNaN(llargs)) {
-        document.getElementById('resultado3').innerText = 'Por favor, ingrese ambos números.';
+        document.getElementById('resultado3').innerText = 'Si us plau, ingresa els dos tiratges.';
         return;
     }
 
